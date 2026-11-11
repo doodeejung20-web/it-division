@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th" class="h-full bg-slate-950">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT & Cybersecurity Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font (Kanit) -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-full flex flex-col justify-between bg-grid-pattern relative overflow-x-hidden selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="fixed bottom-0 right-1/4 translate-x-1/2 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Top Navigation / Header -->
+    <header class="w-full border-b border-slate-800/80 glass-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+            
+            <div class="flex items-center space-x-3.5">
+                <div class="relative">
+                    <div class="w-11 h-11 bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-cyan-500/25 ring-1 ring-white/20">
+                        <i class="fa-solid fa-user-shield text-xl"></i>
+                    </div>
+                    <span class="absolute -top-1 -right-1 flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </span>
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                        แผนกระบบสารสนเทศและความปลอดภัยไซเบอร์
+                    </h1>
+                    <p class="text-[11px] text-cyan-400 font-mono tracking-wider uppercase">
+                        IT & Cybersecurity Division Workspace
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-mono text-slate-300">
+                <i class="fa-solid fa-network-wired text-cyan-400"></i>
+                <span>STATUS: OPERATIONAL</span>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 w-full flex flex-col justify-center relative z-10">
+        
+        <!-- Hero Section -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-medium bg-cyan-950/60 text-cyan-300 border border-cyan-800/50 mb-4 backdrop-blur-md">
+                <i class="fa-solid fa-rocket text-cyan-400"></i> Shortcut Service Portal
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+                ระบบบริการและรายงานสารสนเทศ
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                คลิกเลือกเมนูด้านล่างเพื่อเข้าถึงแดชบอร์ดสถิติ รายงาน PowerBI และระบบจ่ายงานลูกค้าอัจฉริยะ
+            </p>
+        </div>
+
+        <!-- 3 Interactive Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto w-full">
+            
+            <!-- Card 1: PEA Smart Plus -->
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDExZGVjZDUtNjJjMi00M2E5LWEyOWMtNjYxZjRkMWRlY2U4IiwidCI6ImEyMzM5ZjZkLWJmNGEtNDRkYi04OGVjLWNiOGYyN2RhNGFiYiIsImMiOjEwfQ%3D%3D&pageName=ReportSectione9efc115a49acbf575ce" 
+               target="_blank" rel="noopener noreferrer" 
+               class="group relative glass-card p-7 rounded-3xl border border-slate-800 hover:border-violet-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-violet-500/20 flex flex-col justify-between overflow-hidden">
+                
+                <!-- Card Glow Pattern -->
+                <div class="absolute top-0 right-0 w-36 h-36 bg-violet-600/10 rounded-full blur-3xl group-hover:bg-violet-600/30 transition-all duration-500"></div>
+
+                <div>
+                    <!-- Top Badge & Icon Header -->
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-14 h-14 rounded-2xl bg-violet-500/10 border border-violet-500/30 text-violet-400 flex items-center justify-center text-2xl group-hover:bg-violet-600 group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-lg shadow-violet-950">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <span class="text-[11px] font-mono font-semibold px-3 py-1 rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20">
+                            POWER BI
+                        </span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-violet-400 transition-colors">
+                        Pea Smart Plus
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed font-light">
+                        เข้าดูรายงานสรุปสถิติ ผลการดำเนินงาน และข้อมูลการใช้งานระบบ PEA Smart Plus บน PowerBI Analytics
+                    </p>
+                </div>
+
+                <!-- Footer Link Indicator -->
+                <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-medium text-violet-400 group-hover:text-violet-300">
+                    <span>เปิดรายงาน PowerBI</span>
+                    <div class="w-8 h-8 rounded-full bg-violet-500/10 flex items-center justify-center group-hover:bg-violet-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2: PEA e-Bill -->
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZDFkZDFiZDYtZGY0MS00MzkxLTlmYjYtZDQ3Y2MyNzJkZGZmIiwidCI6ImEyMzM5ZjZkLWJmNGEtNDRkYi04OGVjLWNiOGYyN2RhNGFiYiIsImMiOjEwfQ%3D%3D" 
+               target="_blank" rel="noopener noreferrer" 
+               class="group relative glass-card p-7 rounded-3xl border border-slate-800 hover:border-emerald-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/20 flex flex-col justify-between overflow-hidden">
+                
+                <!-- Card Glow Pattern -->
+                <div class="absolute top-0 right-0 w-36 h-36 bg-emerald-600/10 rounded-full blur-3xl group-hover:bg-emerald-600/30 transition-all duration-500"></div>
+
+                <div>
+                    <!-- Top Badge & Icon Header -->
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl group-hover:bg-emerald-600 group-hover:text-slate-950 group-hover:scale-110 transition-all duration-300 shadow-lg shadow-emerald-950">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <span class="text-[11px] font-mono font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
+                            POWER BI
+                        </span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                        Pea e-Bill
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed font-light">
+                        ติดตามรายงานสรุปภาพรวมบริการใบแจ้งค่าไฟฟ้าอิเล็กทรอนิกส์ PEA e-Bill แบบ Real-time
+                    </p>
+                </div>
+
+                <!-- Footer Link Indicator -->
+                <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-medium text-emerald-400 group-hover:text-emerald-300">
+                    <span>เปิดรายงาน PowerBI</span>
+                    <div class="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3: บริการลูกค้าอัจฉริยะ (WOM) -->
+            <a href="https://csm.pea.co.th/wom/completeusage" 
+               target="_blank" rel="noopener noreferrer" 
+               class="group relative glass-card p-7 rounded-3xl border border-slate-800 hover:border-amber-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/20 flex flex-col justify-between overflow-hidden">
+                
+                <!-- Card Glow Pattern -->
+                <div class="absolute top-0 right-0 w-36 h-36 bg-amber-600/10 rounded-full blur-3xl group-hover:bg-amber-600/30 transition-all duration-500"></div>
+
+                <div>
+                    <!-- Top Badge & Icon Header -->
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-2xl group-hover:bg-amber-500 group-hover:text-slate-950 group-hover:scale-110 transition-all duration-300 shadow-lg shadow-amber-950">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <span class="text-[11px] font-mono font-semibold px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                            CSM WEB
+                        </span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                        บริการลูกค้าอัจฉริยะ (WOM)
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed font-light">
+                        เข้าสู่ระบบจ่ายงานและติดตามการให้บริการลูกค้าอัจฉริยะ (Work Order Management System)
+                    </p>
+                </div>
+
+                <!-- Footer Link Indicator -->
+                <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-medium text-amber-400 group-hover:text-amber-300">
+                    <span>เข้าสู๋ระบบ CSM WOM</span>
+                    <div class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="w-full border-t border-slate-800/60 glass-card py-6 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p>© IT & Cybersecurity Division. All rights reserved.</p>
+            <div class="flex items-center gap-4 text-slate-400">
+                <span class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-shield-halved mr-1"></i> PEA Security Standard</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
